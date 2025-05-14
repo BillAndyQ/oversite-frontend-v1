@@ -15,7 +15,6 @@ export default function AppNavbar() {
       <div className="hidden md:flex">
         <span className="text-md font-bold">Ordenes de trabajo</span>
       </div>
-
       <div className="relative ml-auto hidden sm:flex-1 md:grow-0 md:basis-1/3 lg:basis-1/4">
         <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
         <Input type="search" placeholder="Buscar..." className="w-full bg-background pl-8 md:w-[300px] lg:w-[320px]" />
