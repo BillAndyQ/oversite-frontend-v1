@@ -60,4 +60,40 @@
   "users":[
     
   ]
+  ,
+  "empresas":[
+  {
+    "ruc": "20123456789",
+    "razon_social": "Constructora Lima SAC"
+  },
+  {
+    "ruc": "20456789123",
+    "razon_social": "Inmobiliaria Sol y Mar S.A."
+  },
+  {
+    "ruc": "20567891234",
+    "razon_social": "Servicios Integrales Perú EIRL"
+  },
+  {
+    "ruc": "20678912345",
+    "razon_social": "Tecnologías Avanzadas del Perú S.A.C."
+  },
+  {
+    "ruc": "20789123456",
+    "razon_social": "Comercializadora Andina S.A."
+  },
+  {
+    "ruc": "20891234567",
+    "razon_social": "Distribuidora Norte Perú EIRL"
+  },
+  {
+    "ruc": "20912345678",
+    "razon_social": "Agroexportadora Los Andes S.A."
+  },
+  {
+    "ruc": "20198765432",
+    "razon_social": "Consultoría Empresarial Lima SAC"
+  }
+]
+
 }
