@@ -141,6 +141,9 @@ button{
 .text-head-table{
   font-size: 0.78rem;
 }
+.v-mobile{
+    display: none;
+  }
 
 @media (max-width: 1400px) { /* cuando sea laptop o más grande */
   .text-es {
@@ -151,5 +154,12 @@ button{
   }
   .text-head-table{
     font-size: .9rem;
+  }
+}
+
+@media (max-width: 760px) { /* cuando sea laptop o más grande */
+
+  .v-mobile{
+    display: flex;
   }
 }
