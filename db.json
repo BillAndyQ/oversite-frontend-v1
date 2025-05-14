@@ -1,5 +1,6 @@
 {
-  "ot-service": [
+  "ot-service":
+   [
     {
       "nOrdenTrabajo": "OT-001",
       "nOrdenServicio": "OS-001",
@@ -55,5 +56,8 @@
       "id": "7d10",
       "nOrdenTrabajo": "OT-003"
     }
+  ],
+  "users":[
+    
   ]
 }

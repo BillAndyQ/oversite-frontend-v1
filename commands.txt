@@ -1,3 +1,9 @@
 
-
+//correr json server
 json-server --watch db.json --port 3001
+
+
+.env.local
+URL_BACKEND=http://localhost
+NODE_ENV=production
+COOKIE_SECRET_KEY=b31d57e0-164d-4e75-9fdd-71a8a154a9c1
