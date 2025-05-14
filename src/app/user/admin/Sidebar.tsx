@@ -11,146 +11,119 @@ import { usePathname } from "next/navigation";
 export function Sidebar() {
   const pathname = usePathname();
   console.log("pathname", pathname);
-  
+
   return (
     <SidebarBase>
-      {/* Gestión */}
+      {/* ORDENES DE TRABAJO */}
       <SidebarGroup>
-          <SidebarGroupLabel>Ordenes de trabajo</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {/* <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <a href="#">
-                    <Users className="mr-2 size-4" />
-                    <span>Ordenes de trabajo</span>
-                  </a>
-                </SidebarMenuButton>
-                <SidebarMenuSub>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <a href="#">All</a>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabEq}>
-                        Equipos
-                      </SidebarLink>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                  <SidebarMenuSubItem>
-                    <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                        Personas
-                    </SidebarLink>
-                  </SidebarMenuSubItem>
-                </SidebarMenuSub>
-              </SidebarMenuItem> */}
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabEq}>
-                    <CogIcon className="mr-2 size-4" />
-                    <span>Equipos</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
+        <SidebarGroupLabel>Ordenes de trabajo</SidebarGroupLabel>
+        <SidebarGroupContent>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabEq}>
+                  <CogIcon className="mr-2 size-4" />
+                  <span>Equipos</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
 
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                    <HardHat className="mr-2 size-4" />
-                    <span>Personas</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
+                  <HardHat className="mr-2 size-4" />
+                  <span>Personas</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
 
 
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                    <HardHat className="mr-2 size-4" />
-                    <span>Reportes</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                    <HardHat className="mr-2 size-4" />
-                    <span>Informes</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabReportes}>
+                  <HardHat className="mr-2 size-4" />
+                  <span>Reportes</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabImformenes}>
+                  <HardHat className="mr-2 size-4" />
+                  <span>Informes</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarGroupContent>
+      </SidebarGroup>
 
-        {/* Navegación principal */}
-        <SidebarGroup>
-          <SidebarGroupLabel>Datos</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                    <Home className="mr-2 size-4" />
-                    <span>Empresas</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                    <BarChart3 className="mr-2 size-4" />
-                    <span>Áreas</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabPer}>
-                    <Inbox className="mr-2 size-4" />
-                    <span>Certificadores</span>
-                  </SidebarLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+      {/* DATOS */}
+      <SidebarGroup>
+        <SidebarGroupLabel>Datos</SidebarGroupLabel>
+        <SidebarGroupContent>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabEmpresas}>
+                  <Home className="mr-2 size-4" />
+                  <span>Empresas</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabAreas}>
+                  <BarChart3 className="mr-2 size-4" />
+                  <span>Áreas</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <SidebarLink href={ENDPOINTS_CLIENT.admin.ordTrabCertificadores}>
+                  <Inbox className="mr-2 size-4" />
+                  <span>Certificadores</span>
+                </SidebarLink>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarGroupContent>
+      </SidebarGroup>
 
-        {/* Cursos */}
-        <SidebarGroup>
-          <SidebarGroupLabel>Cursos</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <a href="#">
-                    <Settings className="mr-2 size-4" />
-                    <span>Lista cursos</span>
-                  </a>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+      {/* Cursos */}
+      <SidebarGroup>
+        <SidebarGroupLabel>Cursos</SidebarGroupLabel>
+        <SidebarGroupContent>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <a href="#">
+                  <Settings className="mr-2 size-4" />
+                  <span>Lista cursos</span>
+                </a>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarGroupContent>
+      </SidebarGroup>
 
-        {/* Configuración */}
-        <SidebarGroup>
-          <SidebarGroupLabel>Configuración</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <a href="#">
-                    <Settings className="mr-2 size-4" />
-                    <span>Ajustes</span>
-                  </a>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+      {/* Configuración */}
+      <SidebarGroup>
+        <SidebarGroupLabel>Configuración</SidebarGroupLabel>
+        <SidebarGroupContent>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <a href="#">
+                  <Settings className="mr-2 size-4" />
+                  <span>Ajustes</span>
+                </a>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarGroupContent>
+      </SidebarGroup>
 
     </SidebarBase>
   );

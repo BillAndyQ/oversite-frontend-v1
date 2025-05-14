@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="">
       <AppNavbar/>
-      <h1>Ordenes de Trabajo</h1>
+      <h1>PAGINA PERSONAS</h1>
     </div>
   );
 }

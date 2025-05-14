@@ -10,6 +10,12 @@ export const ENDPOINTS_CLIENT = {
     ordTrabAll : '/user/admin/ordenes-trabajo/all',
     ordTrabEq : '/user/admin/ordenes-trabajo/equipos',
     ordTrabPer: '/user/admin/ordenes-trabajo/personas',
+    ordTrabReportes: '/user/admin/ordenes-trabajo/reportes',
+    ordTrabImformenes: '/user/admin/ordenes-trabajo/informenes',
+
+    ordTrabEmpresas: '/user/admin/datos/empresas',
+    ordTrabAreas: '/user/admin/datos/areas',
+    ordTrabCertificadores: '/user/admin/datos/certificadores',
   }
 }
 

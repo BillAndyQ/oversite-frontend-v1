@@ -1,15 +1,7 @@
 "use client"
 import AppNavbar from "@/app/user/admin/ordenes-trabajo/equipos/AppNavbar";
 import { OrdenTrabajoEquipo } from "@/app/schemas/admin/ordenesTrabajo/ordenTrabEquipo";
-import TablaDinamic from "@/app/components/TableDinamic";
-import { Button } from "@/components/ui/button";
-import { ChevronDown, DownloadIcon, Search, SlidersHorizontal, UploadIcon } from "lucide-react";
 import React, { useState} from 'react';
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
-import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import TableOrdenes from "@/app/components/TableOrdenes";
-
 // Solo de prueba el Navbar
 
 export default function Page() {
@@ -91,7 +83,9 @@ export default function Page() {
   return (
     <div className="">
       <AppNavbar/>
-      
+      <div>
+        content admin home
+      </div>
     </div>
   );
 }
